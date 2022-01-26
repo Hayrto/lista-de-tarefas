@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista de tarefas</title>
+    <link rel="icon" href="./imgs/to-do-list.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="container"> 
+
+        <header id="header">
+            <div id="input-container">
+                
+                    <input
+                        id="todo-input"
+                        placeholder=" quais tarefas você deseja fazer? 
+                        "
+                        type="text"
+                    >
+                    <label 
+                        for="nome"
+                        class="form-label"
+                        > quais tarefas você deseja fazer ? 
+                    </label>
+
+                    <input
+                    type="submit"
+                    id="new-task-submit"
+                    value="Add Tarefas"
+                    >
+            </div>
+        </header>
+        <ul class="todo-list">
+               
+        </ul>    
+        <div id="footer">
+            <span>
+                Você tem <span class="pendingNumb"></span> tarefas pendentes
+            </span>
+            <input
+            type="submit"
+            id="new-task-submiti"
+            value="Limpar Tudo"
+            >
+        </div>
+
+    </div>
+
+    
+
+    <script src="/script.js"></script>
+</body>
+</html>
